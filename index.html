@@ -22,6 +22,7 @@
       .order { overflow:hidden }
       .heading{ text-align:center; }
       .footer{ background: #ccc; margin:0; padding: 40px 0; }
+      div.addthis_toolbox { width:250px; margin: 0 auto; }/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
     </style>
   </head>
   <body>
@@ -45,7 +46,7 @@
           <img src="http://placehold.it/100x100"/>
         </div>
         <div class="span12">
-          <h1>Bitstarter Title (staging)</h1>
+          <h1>Bitstarter Title</h1>
         </div>
         <div class="span12">
           <p class="lead">This is my first bitstarter project.</p>
@@ -79,7 +80,18 @@
             <button class="btn btn-large btn-block btn-primary btn-warning" type="button">Pre order</button>
           </div>
           <div class="social">
-            Social
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+              <a class="addthis_button_preferred_1"></a>
+              <a class="addthis_button_preferred_2"></a>
+              <a class="addthis_button_preferred_3"></a>
+              <a class="addthis_button_preferred_4"></a>
+              <a class="addthis_button_compact"></a>
+              <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5200f92141cf8df6"></script>
+            <!-- AddThis Button END -->
           </div>
         </div>
       </div>
@@ -120,5 +132,15 @@
         </div>
       </div>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42991886-1', 'herokuapp.com');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
